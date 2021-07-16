@@ -11,7 +11,7 @@ import com.facebook.react.bridge.JavaScriptModule
 
 class MenuPackage : ReactPackage {
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
-        return emptyList()
+        return mutableListOf(MenuModule(reactContext))
     }
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {

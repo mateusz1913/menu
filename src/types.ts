@@ -136,3 +136,10 @@ export type NativeMenuComponentProps = {
   actions: ProcessedMenuAction[];
   title?: string;
 };
+
+export type MenuHeader = {
+  image?: string;
+  imageColor?: number | ColorValue;
+  title?: string;
+  titleColor?: number | ColorValue;
+};
